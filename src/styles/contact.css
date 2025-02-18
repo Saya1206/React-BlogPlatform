@@ -1,0 +1,13 @@
+div.main {
+  background: url("https://img.freepik.com/premium-vector/stationery-kit-frame-back-school-concept_13920-1981.jpg?semt=ais_hybrid")
+    repeat;
+    padding: 90px;
+}
+
+h2 {
+  color: #2c3930;
+  font-weight: bolder;
+  font-size: 2.3rem;
+  padding-bottom: 20px;
+}
+

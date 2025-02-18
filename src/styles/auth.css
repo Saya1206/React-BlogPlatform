@@ -1,0 +1,132 @@
+* {
+  font-family: "Merriweather", serif;
+}
+
+h2 {
+  font-weight: bolder;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* General Styling */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../Assets/bg.png") no-repeat center center/cover;
+}
+
+/* Form Box */
+.form-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+
+/* Avatar Image */
+.form-box::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background: url("../Assets/wave.png") no-repeat center center/cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Title */
+.form-box h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Input Fields */
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-box input:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+/* Buttons */
+.form-box button {
+  width: 100%;
+  padding: 8px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+/* Google Button */
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: white !important; /* White background */
+  color: black !important; /* Black text */
+  border: 1px solid #ccc; /* Optional border for visibility */
+  font-size: 1.1rem;
+  border-radius: 25px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #f5f5f5 !important; /* Light gray on hover */
+  transform: scale(1.05);
+}
+
+.google-icon {
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* Form Text */
+.form-box p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.form-box span {
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-box span:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+  .form-box {
+    width: 90%;
+    padding: 20px;
+  }
+}

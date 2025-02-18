@@ -1,0 +1,32 @@
+.auth-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.google-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.toggle-link {
+  color: blue;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
