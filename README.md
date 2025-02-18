@@ -53,6 +53,9 @@ Blog Platform is a web application built using React.js that allows users to aut
 
 2. Add your Firebase credentials inside the .env file:
 
+    Create a `.env` file in the root directory and add the following Firebase credentials:
+
+    ```ini
     REACT_APP_API_KEY=your-api-key
     REACT_APP_AUTH_DOMAIN=your-auth-domain
     REACT_APP_PROJECT_ID=your-project-id
@@ -64,15 +67,16 @@ Blog Platform is a web application built using React.js that allows users to aut
     # Ignore environment variable files
     .env
 
-4. Modify the firebase.js file to use environment variables:
+4. Modify the `firebase.js` file to use environment variables:
 
+    ```javascript
     const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID,
+        apiKey: process.env.REACT_APP_API_KEY,
+        authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+        projectId: process.env.REACT_APP_PROJECT_ID,
+        storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+        messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+        appId: process.env.REACT_APP_APP_ID,
     };
 
  
@@ -99,5 +103,7 @@ Blog Platform is a web application built using React.js that allows users to aut
 2. Open http://localhost:3000/ in your browser.
 
 ## Live Demo
-    Check out the live version of this project: 
-    👉 Blog Platform Live Demo
+
+Check out the live version of this project:  
+👉 **[Blog Platform Live Demo](https://react-blog-platform-89xm4rlqe-sayali-patils-projects-a2f87a14.vercel.app)**
+
